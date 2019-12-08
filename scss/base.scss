@@ -1,0 +1,273 @@
+%wrapper {
+  max-width: 1120px;
+  margin: auto;
+}
+
+%flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+%caption {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after {
+    width: 69px;
+    height: 22px;
+    top: 40%;
+    left: 0;
+    content: '';
+    z-index: -10;
+    background-color: #7BEEC7;
+    position: absolute;
+  }
+}
+
+%button {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  padding: 15px 30px;
+  transition: all 0.5s;
+
+  &:active,
+  &:focus,
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+html {
+  font-size: 10px;
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #60606E;
+    line-height: 3rem;
+
+    header {
+      height: 500px;
+      position: relative;
+      margin-bottom: 130px;
+
+      .bg {
+        z-index: -100;
+        position: absolute;
+        width: 100%;
+        height: 760px;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+      }
+
+      .navigation {
+        @extend %wrapper;
+        @extend %flex-container;
+        align-items: center;
+        padding: 43px 10px 0;
+
+        .logo {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.8rem;
+        }
+
+        .menu-icon {
+          width: 3.1rem;
+          height: 1.5rem;
+        }
+      }
+
+      .title {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 190px;
+
+        &_main {
+          font-size: 3.6rem;
+          margin-bottom: 28px;
+        }
+
+        &_sub {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .about {
+      @extend %wrapper;
+      @extend %flex-container;
+      padding: 10px;
+      margin-bottom: 130px;
+
+      &_item:first-child {
+        padding-right: 30px;
+      }
+
+      .caption {
+        @extend %caption;
+      }
+
+      .subcaption {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+    }
+
+    .mid-caption {
+      max-width: 716px;
+      margin: auto auto 85px;
+
+      .caption {
+        @extend %caption;
+        text-align: center;
+
+        &::after {
+          left: 32%;
+        }
+      }
+
+      .mid-subcaption {
+        text-align: center;
+      }
+    }
+
+    .benefits {
+      @extend %wrapper;
+      margin-bottom: 130px;
+
+      .benefits-row {
+        @extend %flex-container;
+
+        .benefit {
+          padding: 10px;
+
+          .benefit-title {
+            position: relative;
+
+            .material-icons {
+              position: absolute;
+              top: 0;
+              background-color: #7BEEC7;
+              color: white;
+              padding: 5px;
+            }
+
+            .b-title {
+              padding-left: 50px;
+              font-size: 1.8rem;
+              font-weight: bold;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+    }
+
+    .gallery {
+      @extend %wrapper;
+
+      &-row {
+        @extend %flex-container;
+
+        .pic-container {
+          width: 263px;
+          height: 333px;
+          margin-bottom: 22px;
+          overflow: hidden;
+          position: relative;
+
+          img {
+            height: 333px;
+          }
+
+          .square {
+            position: absolute;
+            left: -25%;
+          }
+        }
+      }
+    }
+
+    footer {
+      background-color: #7BEEC7;
+
+      .footer {
+        @extend %wrapper;
+        @extend %flex-container;
+        padding: 40px;
+
+        .statement {
+          font-size: 3rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: white;
+          line-height: 4rem;
+          margin-bottom: 20px;
+          margin-right: 20px;
+        }
+
+        .contact-btn {
+          @extend %button;
+          background-color: white;
+          color: #7BEEC7;
+        }
+
+        form {
+          box-sizing: border-box;
+          width: 550px;
+          background-color: white;
+          padding: 2px 20px;
+
+          h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+          .flex {
+            @extend %flex-container;
+            margin-bottom: 20px;
+
+            input {
+              border: 0.5px #c4c4c4 solid;
+              height: 50px;
+              width: 75%;
+              border-right: 0;
+
+            }
+
+            ::placeholder {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #c4c4c4;
+              padding-left: 20px;
+              text-transform: uppercase;
+            }
+
+            .send {
+              @extend %button;
+              width: 25%;
+              color: white;
+              background-color: #7BEEC7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

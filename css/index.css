@@ -1,0 +1,166 @@
+html body header .navigation, html body .about, html body .benefits, html body .gallery, html body footer .footer {
+  max-width: 1120px;
+  margin: auto; }
+
+html body header .navigation, html body .about, html body .benefits .benefits-row, html body .gallery-row, html body footer .footer, html body footer .footer form .flex {
+  display: flex;
+  justify-content: space-between; }
+
+html body .about .caption, html body .mid-caption .caption {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  position: relative; }
+  html body .about .caption::after, html body .mid-caption .caption::after {
+    width: 69px;
+    height: 22px;
+    top: 40%;
+    left: 0;
+    content: '';
+    z-index: -10;
+    background-color: #7BEEC7;
+    position: absolute; }
+
+html body footer .footer .contact-btn, html body footer .footer form .flex .send {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  border: none;
+  padding: 15px 30px;
+  transition: all 0.5s; }
+  html body footer .footer .contact-btn:active, html body footer .footer form .flex .send:active, html body footer .footer .contact-btn:focus, html body footer .footer form .flex .send:focus, html body footer .footer .contact-btn:hover, html body footer .footer form .flex .send:hover {
+    transform: scale(1.07); }
+
+html {
+  font-size: 10px; }
+  html body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    color: #60606E;
+    line-height: 3rem; }
+    html body header {
+      height: 500px;
+      position: relative;
+      margin-bottom: 130px; }
+      html body header .bg {
+        z-index: -100;
+        position: absolute;
+        width: 100%;
+        height: 760px;
+        -webkit-filter: grayscale(100%);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%); }
+      html body header .navigation {
+        align-items: center;
+        padding: 43px 10px 0; }
+        html body header .navigation .logo {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1.8rem; }
+        html body header .navigation .menu-icon {
+          width: 3.1rem;
+          height: 1.5rem; }
+      html body header .title {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 190px; }
+        html body header .title_main {
+          font-size: 3.6rem;
+          margin-bottom: 28px; }
+        html body header .title_sub {
+          font-size: 1.4rem; }
+    html body .about {
+      padding: 10px;
+      margin-bottom: 130px; }
+      html body .about_item:first-child {
+        padding-right: 30px; }
+      html body .about .subcaption {
+        font-family: 'Open Sans', sans-serif;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: bold;
+        margin-bottom: 20px; }
+    html body .mid-caption {
+      max-width: 716px;
+      margin: auto auto 85px; }
+      html body .mid-caption .caption {
+        text-align: center; }
+        html body .mid-caption .caption::after {
+          left: 32%; }
+      html body .mid-caption .mid-subcaption {
+        text-align: center; }
+    html body .benefits {
+      margin-bottom: 130px; }
+      html body .benefits .benefits-row .benefit {
+        padding: 10px; }
+        html body .benefits .benefits-row .benefit .benefit-title {
+          position: relative; }
+          html body .benefits .benefits-row .benefit .benefit-title .material-icons {
+            position: absolute;
+            top: 0;
+            background-color: #7BEEC7;
+            color: white;
+            padding: 5px; }
+          html body .benefits .benefits-row .benefit .benefit-title .b-title {
+            padding-left: 50px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-transform: uppercase; }
+    html body .gallery-row .pic-container {
+      width: 263px;
+      height: 333px;
+      margin-bottom: 22px;
+      overflow: hidden;
+      position: relative; }
+      html body .gallery-row .pic-container img {
+        height: 333px; }
+      html body .gallery-row .pic-container .square {
+        position: absolute;
+        left: -25%; }
+    html body footer {
+      background-color: #7BEEC7; }
+      html body footer .footer {
+        padding: 40px; }
+        html body footer .footer .statement {
+          font-size: 3rem;
+          font-weight: bold;
+          text-transform: uppercase;
+          color: white;
+          line-height: 4rem;
+          margin-bottom: 20px;
+          margin-right: 20px; }
+        html body footer .footer .contact-btn {
+          background-color: white;
+          color: #7BEEC7; }
+        html body footer .footer form {
+          box-sizing: border-box;
+          width: 550px;
+          background-color: white;
+          padding: 2px 20px; }
+          html body footer .footer form h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-transform: uppercase; }
+          html body footer .footer form .flex {
+            margin-bottom: 20px; }
+            html body footer .footer form .flex input {
+              border: 0.5px #c4c4c4 solid;
+              height: 50px;
+              width: 75%;
+              border-right: 0; }
+            html body footer .footer form .flex ::placeholder {
+              font-family: 'Montserrat', sans-serif;
+              font-size: 1.2rem;
+              font-weight: bold;
+              color: #c4c4c4;
+              padding-left: 20px;
+              text-transform: uppercase; }
+            html body footer .footer form .flex .send {
+              width: 25%;
+              color: white;
+              background-color: #7BEEC7; }
